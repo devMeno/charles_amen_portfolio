@@ -1,11 +1,11 @@
 "use client"
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Inter } from "next/font/google";
+import { Inter, Atkinson_Hyperlegible, Lexend } from "next/font/google";
 import "./globals.css";
 import CircularText from "@/components/CircularText";
 import TargetCursor from "@/components/TargetCursor";
 
-const inter = Inter({
+const lexend = Lexend({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} antialiased bg-[#111124] text-gray-400 relative w-full h-full`}
+        className={`${lexend.className} antialiased bg-[#111124] text-gray-400 relative w-full h-full`}
       >
       <div className={'fixed inset-0 -z-10'}>
           {/*<LiquidEther
