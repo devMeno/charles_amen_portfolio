@@ -4,30 +4,30 @@ import ExperienceCard from "@/components/customs/ExperienceCard";
 
 export default function Home() {
   return (
-      <div className={'flex justify-center mx-auto gap-4 h-screen'}>
-          <div className={'w-1/3 py-[100px] flex flex-col justify-between'}>
+      <div className={'lg:flex justify-center mx-auto gap-4 h-screen'}>
+          <div className={'w-[90%] mx-auto lg:w-1/3 lg:mx-0 py-[100px] flex flex-col justify-between'}>
               <div className={'flex flex-col'}>
-                  <span className={'text-[50px] font-bold text-white'}>Charles Amen</span>
-                  <span className={'text-[25px] font-semibold mb-4 text-white'}>Software Engineer (aspiring)</span>
+                  <span className={'text-[40px] md:text-[50px] font-bold text-white'}>Charles Amen</span>
+                  <span className={'text-[22px] md:text-[25px] font-semibold mb-4 text-white'}>Software Engineer (aspiring)</span>
                   <span className={'w-2/3'}>I build accessible, pixel-perfect digital experiences for the web.</span>
               </div>
-              <div className={'flex gap-2'}>
-                  <div className={'size-[45px] flex justify-center items-center cursor-target'}>
+              <div className={'mt-10 flex gap-2'}>
+                  <a href="https://github.com/devMeno" target="_blank" className={'size-[45px] flex justify-center items-center cursor-target'}>
                       <Github size={30} className={'hover:text-white'}/>
-                  </div>
-                  <div className={'size-[45px] flex justify-center items-center cursor-target'}>
+                  </a>
+                  <a href="https://www.linkedin.com/in/charles-amen-lokonon-1168a023b/" target="_blank" className={'size-[45px] flex justify-center items-center cursor-target'}>
                       <Linkedin size={30} className={'hover:text-white'} />
-                  </div>
-                  <div className={'size-[45px] flex justify-center items-center cursor-target'}>
+                  </a>
+                  <a href="https://www.instagram.com/meno.lokonon/" target="_blank" className={'size-[45px] flex justify-center items-center cursor-target'}>
                       <Instagram size={30} className={'hover:text-white'}/>
-                  </div>
-                  <div className={'size-[45px] flex justify-center items-center cursor-target'}>
+                  </a>
+                  <a href="mailto:charlesamenlokonon@gmail.com" target="_blank" className={'size-[45px] flex justify-center items-center cursor-target'}>
                       <Mail size={30} className={'hover:text-white'}/>
-                  </div>
+                  </a>
               </div>
           </div>
-          <div className={'w-1/3 flex flex-col gap-10 py-[100px] overflow-y-scroll [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]'}>
-              <div className={'flex flex-col gap-[2px] px-4'}>
+          <div className={'w-[90%] mx-auto lg:w-1/3 lg:mx-0 flex flex-col gap-10 pb-10 lg:py-[100px] overflow-y-scroll [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]'}>
+              <div className={'flex flex-col gap-[2px] lg:px-4'}>
                   <span>I’m a developer passionate about crafting accessible, pixel-perfect user interfaces that blend thoughtful design with robust engineering. My favorite work lies at the intersection of design and development, creating experiences that not only look great but are meticulously built for performance and usability.</span><br/>
                   <span>Currently, I'm a Senior Front-End Engineer at Klaviyo, specializing in accessibility. I contribute to the creation and maintenance of UI components that power Klaviyo’s frontend, ensuring our platform meets web accessibility standards and best practices to deliver an inclusive user experience.</span><br/>
                   <span>In the past, I've had the opportunity to develop software across a variety of settings — from advertising agencies and large corporations to start-ups and small digital product studios. Additionally, I also released a comprehensive video course a few years ago, guiding learners through building a web app with the Spotify API.</span><br/>
@@ -140,15 +140,21 @@ export default function Home() {
                       </div>
 
 
+                      {/*<div className="group relative flex gap-x-5">
 
-                      <div className="group relative flex gap-x-5">
-
-                          <div className="relative group-last:after:hidden after:absolute after:top-8 after:bottom-2 after:start-3 after:w-px after:-translate-x-[0.5px] after:bg-gray-200 dark:after:bg-neutral-700">
+                          <div
+                              className="relative group-last:after:hidden after:absolute after:top-8 after:bottom-2 after:start-3 after:w-px after:-translate-x-[0.5px] after:bg-gray-200 dark:after:bg-neutral-700">
                               <div className="relative z-10 size-6 flex justify-center items-center">
-                                  <svg className="shrink-0 size-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 12h.01"/><path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><path d="M22 13a18.15 18.15 0 0 1-20 0"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg>
+                                  <svg className="shrink-0 size-6" xmlns="http://www.w3.org/2000/svg" width="24"
+                                       height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                       strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                                      <path d="M12 12h.01"/>
+                                      <path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/>
+                                      <path d="M22 13a18.15 18.15 0 0 1-20 0"/>
+                                      <rect width="20" height="14" x="2" y="6" rx="2"/>
+                                  </svg>
                               </div>
                           </div>
-
 
 
                           <div className="grow pb-8 group-last:pb-0">
@@ -165,15 +171,18 @@ export default function Home() {
                                       Worked with a diverse range of clients, delivering tailored design solutions.
                                   </li>
                                   <li className="ps-1">
-                                      Developed and maintained strong client relationships through effective communication and project management.
+                                      Developed and maintained strong client relationships through effective
+                                      communication and project management.
                                   </li>
                                   <li className="ps-1">
-                                      Utilized tools such as Notion for project tracking, Mailchimp for email marketing designs, Slack for team collaboration, and GitHub for version control and project sharing.
+                                      Utilized tools such as Notion for project tracking, Mailchimp for email marketing
+                                      designs, Slack for team collaboration, and GitHub for version control and project
+                                      sharing.
                                   </li>
                               </ul>
                           </div>
 
-                      </div>
+                      </div>*/}
 
                   </div>
 
