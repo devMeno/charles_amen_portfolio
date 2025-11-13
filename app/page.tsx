@@ -27,13 +27,17 @@ export default function Home() {
               </div>
           </div>
           <div className={'w-[90%] mx-auto lg:w-1/3 lg:mx-0 flex flex-col gap-10 pb-10 lg:py-[100px] overflow-y-scroll [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]'}>
-              <div className={'flex flex-col gap-[2px] lg:px-4'}>
-                  <span>I’m a developer passionate about crafting accessible, pixel-perfect user interfaces that blend thoughtful design with robust engineering. My favorite work lies at the intersection of design and development, creating experiences that not only look great but are meticulously built for performance and usability.</span><br/>
-                  <span>Currently, I'm a Senior Front-End Engineer at Klaviyo, specializing in accessibility. I contribute to the creation and maintenance of UI components that power Klaviyo’s frontend, ensuring our platform meets web accessibility standards and best practices to deliver an inclusive user experience.</span><br/>
-                  <span>In the past, I've had the opportunity to develop software across a variety of settings — from advertising agencies and large corporations to start-ups and small digital product studios. Additionally, I also released a comprehensive video course a few years ago, guiding learners through building a web app with the Spotify API.</span><br/>
-                  <span>In my spare time, I’m usually climbing, playing tennis, hanging out with my wife and two cats, or running around Hyrule searching for Korok seeds</span>
-              </div>
-              <div className={'flex flex-col gap-4'}>
+                <div className={'flex flex-col gap-[2px] lg:px-4'}>
+                    <span>
+                        Passionné par la tchnologie et les innovations numériques, je suis actuellement développeur particulièrement interessé par la création d'interfaces accessibles alliant beau design et ingénieurie robuste.
+                        La création d'expériences non seulement esthétiques mais aussi et surtout performantes est ce pour quoi je travaille et essaie de m'améliorer chaque jour.
+                    </span><br/>
+                    <span>
+                        Présentement, je suis développeur à BANCA ENGINEERING, une entreprise de BTP spécialisée dans l'audit. J'y suis chargé de la conception, du développement, du déploiement et de la maintenance d'applications de gestion des ressources humaines et des marchés publics entre autres, contribuant ainsi de façon très active à la transition numérique de ladite entreprise.
+                        J'ai également pour mission gestion de tous les aspects techniques relatifs à une plateforme devant interconnecter les acteurs du BTP.
+                    </span><br/>
+                </div>
+                <div className={'flex flex-col gap-4'}>
                   <span className={'text-[22px] font-semibold ml-4'}>Mon expérience</span>
 
                   <div>
@@ -50,32 +54,29 @@ export default function Home() {
 
                           <div className="grow pb-8 group-last:pb-0">
                               <h3 className="mb-1">
-                                  2023 - Present
+                                  Depuis septembre 2025
                               </h3>
 
                               <p className="font-semibold">
-                                  Web Designer & Web Developer
+                                  Développeur fullstack & mobile à BANCA ENGINEERING
                               </p>
 
-                              <p className="mt-1">
+                              {/*<p className="mt-1">
                                   The company has high expectations and using OKRs there is a mutual understanding of expectations and performance.
-                              </p>
+                              </p>*/}
 
                               <ul className="list-disc ms-6 mt-3 space-y-1.5">
                                   <li className="ps-1">
-                                      Designed template UIs and design systems in Figma.
+                                        Développement d'application web de gestion RH.
                                   </li>
                                   <li className="ps-1">
-                                      Converted UIs into responsive HTML and CSS with a mobile-first approach.
+                                        Maintenance d'une application mobile et ajout de fonctionnalités.
                                   </li>
                                   <li className="ps-1">
-                                      Created custom illustrations and item description banners.
+                                        Fourniture de manuels d'utilisation détaillés.
                                   </li>
                                   <li className="ps-1">
-                                      Provided detailed documentation and customer support on GitHub.
-                                  </li>
-                                  <li className="ps-1">
-                                      Engaged with users to address setup inquiries, bug issues, and feedback.
+                                        Collaboration avec les utilisateurs en vue de l'amélioration continue des solutions.
                                   </li>
                               </ul>
                           </div>
@@ -96,15 +97,15 @@ export default function Home() {
 
                           <div className="grow pb-8 group-last:pb-0">
                               <h3 className="mb-1">
-                                  2021 - 2023
+                                    Janvier - Mars 2025
                               </h3>
 
                               <p className="cursor-target py-2 w-fit font-semibold hover:text-white">
-                                  Senior Software Engineer at Mailchimp
+                                    Développeur frontend à Intside
                               </p>
 
                               <p className="mt-1">
-                                  This is an excellent company and they reward their employees. It's becoming a big company but it's still private, so the culture is as good as it gets at 1,000+ employees if you ask me. Managers are still adapting to the growth I think, but everyone has to. Great place to work.
+                                  En tant que développeur frontend, j’ai participé à la réalisation sur mesure de projets pour les clients. En collaboration avec les équipes de designers et de développeurs backend, j'ai contribué au développement de fonctionnalités côté client et intégré des maquettes Figma.
                               </p>
 
                           </div>
@@ -125,16 +126,33 @@ export default function Home() {
 
                           <div className="grow pb-8 group-last:pb-0">
                               <h3 className="mb-1">
-                                  2011 - 2021
+                                  Janvier - Juillet 2024
                               </h3>
 
                               <p className="font-semibold">
-                                  Junior Software Engineer at Slack
+                                  Développeur frontend stagiaire à RightCom
                               </p>
 
                               <p className="mt-1">
-                                  Work in Slack is one of the beautiful experience I can do in my entire life. There are a lot of interesting thing to learn and manager respect your time and your personality.
+                                    Au cours de cette expérience, j’ai découvert et perfectionné des pratiques de développement, tout en apportant un soutein dans l’analyse métier. Ce
+                                    stage m’a permis de travailler sur des produits variés et d’acquérir une
+                                    expérience précieuse en gestion des tâches et en méthodologie Agile.
                               </p>
+
+                              <ul className="list-disc ms-6 mt-3 space-y-1.5">
+                                  <li className="ps-1">
+                                        Développement de fonctionnalités côté client.
+                                  </li>
+                                  <li className="ps-1">
+                                        Intégration de templates de mails avec JSREPORT.
+                                  </li>
+                                  <li className="ps-1">
+                                        Réalisation de tests, débogage puis maintenance du code frontend de plusieurs produits.
+                                  </li>
+                                  <li className="ps-1">
+                                        Partcipation aux différentes activités entrant dans le processus de développement logiciel suivant la méthodologie Agile (Sprint planning, Sprint retrospective, Code review, Daily scrum).
+                                  </li>
+                              </ul>
                           </div>
 
                       </div>
