@@ -26,6 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+          
       <body
         className={`${inter.className} antialiased bg-[#111124] text-gray-400 relative w-full h-full`}
       >
@@ -59,9 +60,9 @@ export default function RootLayout({
 
           {children}
       </main>
-        <div className={'absolute top-4 right-4'}>
+        {/*<div className={'absolute top-4 right-4'}>
             Boutton
-        </div>
+        </div>*/}
       </body>
     </html>
   );
