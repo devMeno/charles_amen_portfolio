@@ -10,7 +10,7 @@ export default function Home() {
               <div className={'flex flex-col'}>
                   <span className={'text-[40px] md:text-[50px] font-bold text-white'}>Charles Amen</span>
                   <span className={'text-[22px] md:text-[25px] font-medium mb-4 text-white'}>Ingénieur Logiciel <span className="text-[18px] text-[20px]">(en devenir)</span></span>
-                  <span className={'w-2/3'}>I build accessible, pixel-perfect digital experiences for the web.</span>
+                  <span className={'w-2/3'}>I build.</span>
               </div>
               <div className={'mt-10 flex gap-2'}>
                   <a href="https://github.com/devMeno" target="_blank" className={'size-[45px] flex justify-center items-center cursor-target'}>
