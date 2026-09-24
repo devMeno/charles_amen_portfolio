@@ -1,16 +1,14 @@
 "use client"
 import type { Metadata } from "next";
-import { Inter, Atkinson_Hyperlegible, Lexend } from "next/font/google";
+import { Fira_Code, Open_Sans } from "next/font/google";
 import "./globals.css";
-import CircularText from "@/components/CircularText";
-import TargetCursor from "@/components/TargetCursor";
 
-const lexend = Lexend({
+const fira = Fira_Code({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
 
-const inter = Inter({
+const openSans = Open_Sans({
   subsets: ["latin"],
 });
 
@@ -28,41 +26,13 @@ export default function RootLayout({
     <html lang="en">
           
       <body
-        className={`${inter.className} antialiased bg-[#111124] text-gray-400 relative w-full h-full`}
+        className={`${openSans.className} antialiased bg-black text-white relative w-full h-full`}
       >
-      <div className={'fixed inset-0 -z-10'}>
-          {/*<LiquidEther
-              colors={['#5227FF', '#FF9FFC', '#B19EEF']}
-              mouseForce={20}
-              cursorSize={100}
-              isViscous={false}
-              viscous={30}
-              iterationsViscous={32}
-              iterationsPoisson={32}
-              resolution={0.5}
-              isBounce={false}
-              autoDemo={true}
-              autoSpeed={0.5}
-              autoIntensity={2.2}
-              takeoverDuration={0.25}
-              autoResumeDelay={3000}
-              autoRampDuration={0.6}
-          />*/}
-      </div>
 
       <main className={'relative z-10'}>
-          <div className={'hidden lg:block'}>
-              <TargetCursor
-                  spinDuration={2}
-                  hideDefaultCursor={true}
-              />
-          </div>
-
           {children}
       </main>
-        {/*<div className={'absolute top-4 right-4'}>
-            Boutton
-        </div>*/}
+        
       </body>
     </html>
   );
