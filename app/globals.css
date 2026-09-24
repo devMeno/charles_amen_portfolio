@@ -47,6 +47,9 @@
   --color-light-gray: var(--light-gray);
   --color-gray: var(--gray);
   --color-white: var(--white);
+
+  --font-fira: var(--font-fira);
+  --font-open-sans: var(--font-open-sans);
 }
 
 :root {

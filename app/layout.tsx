@@ -4,11 +4,12 @@ import { Fira_Code, Open_Sans } from "next/font/google";
 import "./globals.css";
 
 const fira = Fira_Code({
-  variable: "--font-geist-sans",
+  variable: "--font-fira",
   subsets: ["latin"],
 });
 
 const openSans = Open_Sans({
+  variable: "--font-open-sans",
   subsets: ["latin"],
 });
 
@@ -26,7 +27,7 @@ export default function RootLayout({
     <html lang="en">
           
       <body
-        className={`${openSans.className} antialiased bg-black text-white relative w-full h-full`}
+        className={`${fira.variable} ${openSans.variable} antialiased bg-black text-white relative w-full h-full`}
       >
 
       <main className={'relative z-10'}>
